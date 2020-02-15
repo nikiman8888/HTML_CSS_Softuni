@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Customer Details</legend>
+            <div>
+                <label for="name">First Name</label>
+                <input type="text" id="name" autofocus required />
+            </div>
+            <br />
+            <div>
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" />
+            </div>
+            <br>
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" id="male" value="male" name="gender" />
+                <label for="female">Female</label>
+                <input type="radio" id="female" value="female" name="gender" />
+                <label for="oher">Other</label>
+                <input type="radio" id="other" value="other" name="gender" />
+            </div>
+            <br />
+            <div>
+                Preferred contact method:
+                <label>Email</label>
+                <input type="radio" name="contact" id="email" value="email" />
+                <label>Phone</label>
+                <input type="radio" name="contact" id="phone" value="phone" />
+            </div>
+            <br>
+            <div>
+                <label for="emai">Email</label>
+                <input type="email" name="email" id="email" placeholder="your@email.com" />
+            </div>   
+            <br/>      
+            </div>
+                <label for="phone">Phone</label>
+                <input type="number" name="phone" id="phone" placeholder="+359885236225"/>
+            </div>
+            <br/>
+            <br/>
+            <div>
+                <label for="city">Town</label>
+                <select name="City" id ="city">
+                    <option value="varna">Varna</option>
+                    <option value="plovdiv">Plovdiv</option>
+                    <option value="burgas">Burgas</option>
+                    <option value="sofia">Sofia</option>
+                    <option value="pleven">Pleven</option>
+                </select>
+            </div>
+            <br/>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age"  min="18" max="70"/>
+            </div>
+            <br>
+            <div>
+                <label for="language">Programming language</label>
+                <datalist name="language" id ="language">
+                    <option value="java">Java</option>
+                    <option value="c#">C#</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="ruby">Ruby</option>
+                    <option value="other">Other</option>
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <textarea rows="5" cols="20" placeholder="More information..."></textarea>   
+            </div>
+            <br>
+            <div>
+                <label for="terms">I agree the Terms and Conditions</label>
+                <input type="checkbox" name="terms" id="terms" checked/>
+            </div>
+            <br>
+            <button type="submit">Send</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
